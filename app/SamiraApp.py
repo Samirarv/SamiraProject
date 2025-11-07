@@ -20,7 +20,6 @@ HTML = """
       -moz-osx-font-smoothing:grayscale;
     }
     body{
-      /* بک‌گراند صورتی گرادیانت */
       background: linear-gradient(135deg, #ffb6c1 0%, #ffc0cb 50%, #ff9fbf 100%);
       display:flex;
       align-items:center;
@@ -51,12 +50,11 @@ HTML = """
       font-weight: 600;
       opacity:0.95;
     }
-
-    /* واکنش‌گرا */
-    @media (max-width:420px){
-      .card{ padding:18px 24px; min-width:260px; }
-      .name{ font-size:18px; }
-      .id{ font-size:16px; }
+    .note{
+      margin-top: 12px;
+      font-size: 14px;
+      color: #fff;
+      opacity: 0.9;
     }
   </style>
 </head>
@@ -64,6 +62,10 @@ HTML = """
   <div class="card" role="main" aria-label="کارت دانشجویی">
     <div class="name">سمیرا ارواحی</div>
     <div class="id">40113011003</div>
+
+    <!--  این خط جدید اضافه شد -->
+    <div class="note">این یک تغییر تستی است </div>
+
   </div>
 </body>
 </html>
